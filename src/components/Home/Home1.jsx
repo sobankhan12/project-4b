@@ -18,17 +18,18 @@ const Home1 = () => {
         }
     ],
     timing:{
+         ...timing,
         delay: 300,
         duration:2000,
         iterations: Infinity,
-        // easing: 'ease-in-out',
+        easing: 'ease-in-out',
         direction:"alternate"
     }
     })
     const { ref: shoes } = useWebAnimations({
         keyframes,
         timing: {
-            // ...timing,
+            ...timing,
             duration:1,
             delay: 500,
             iterations: 1,
